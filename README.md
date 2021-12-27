@@ -12,6 +12,7 @@ reviewing docs as a newbie and testing and trying to make the thing work
 Find the implementation instructions  
 ```
 [Videom Implementation](https://activeprospect.com/video-ease-of-implementing-trustedform/)
+
 [Developer Documentation](https://developers.activeprospect.com/docs/trustedform/implementing-trustedform-s-script/)
 
 # Steps: 
