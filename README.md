@@ -1,19 +1,20 @@
 # Trustedform-from-scratch
-reviewing docs as a newbie and testing and trying to make the thing work
+Reviewing the docs as a newbie, test, and try to make the thing work
 
 # Instructions:
 ```
- 1. TrustedForm Publish Certificate URL 
-2. Claim Certificate URL  
+ 1. Add the TrustedForm Script
+2. Publish Certificate URL 
+3. Claim Certificate URL  
 ```
 
 # Research: 
 ```
 Find the implementation instructions  
 ```
-[Videom Implementation](https://activeprospect.com/video-ease-of-implementing-trustedform/)
-
 [Developer Documentation](https://developers.activeprospect.com/docs/trustedform/implementing-trustedform-s-script/)
+
+[Video Implementation](https://activeprospect.com/video-ease-of-implementing-trustedform/)
 
 # Steps: 
 ```
