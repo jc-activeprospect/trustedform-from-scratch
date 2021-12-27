@@ -18,11 +18,12 @@ Find the implementation instructions  
 
 # Steps: 
 ```
-1. Create and run an index.html file Find form markup and add to the index.html file
-2. Create a submission.html file
-3. Add TrustedForm Script
-4. Run, Test, Validate the script
-5. Set Up Middleware Tester
-6. Set Up Basic Auth. Bash Command to Base64 Encode  `echo -n 'API:12345' | openssl base64`
-7. Claim TrustedForm Certification
+1. Create and run an index.html file 
+2. Find form markup and add to the index.html file
+3. Create a submission.html file
+4. Add TrustedForm Script
+5. Run, Test, Validate the script
+6. Set Up Middleware Tester
+7. Set Up Basic Auth. Bash Command to Base64 Encode  `echo -n 'API:12345' | openssl base64`
+8. Claim TrustedForm Certification
 ```
