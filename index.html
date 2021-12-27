@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <h2>TrustedForm Test</h2>
+
+    <form action="submission_page.html">
+      <label for="fname">First name:</label><br>
+      <!-- add the following inside of the input type params: onClick="myFunction()" -->
+      <input type="text" id="fname" name="fname"><br>
+      <label for="lname">Last name:</label><br>
+      <input type="text" id="lname" name="lname"><br><br>
+      <input type="checkbox" name="disclaimer" /> By clicking this button, I hereby consent to receive sms, calls, emails
+      <br></br>
+      <input type="submit" value="Submit">
+
+    </form>
+
+    <p>If you click the "Submit" button, the form-data will be sent to a page called "/submission_page.html".</p>
+
+    <!-- <script type="text/javascript">
+      function myFunction() {
+        console.log(document.getElementById("xxTrustedFormToken_0").value);
+      }
+    </script> -->
+
+    <script type="text/javascript">
+      (function() {
+        var field = 'xxTrustedFormCertUrl';
+        var provideReferrer = false;
+        var invertFieldSensitivity = false;
+        var sandbox = true;
+        var tf = document.createElement('script');
+        tf.type = 'text/javascript'; tf.async = true;
+        tf.src = 'http' + ('https:' == document.location.protocol ? 's' : '') +
+        '://api.trustedform.com/trustedform.js?provide_referrer=' +
+        escape(provideReferrer) + '&field=' + escape(field) + '&l='+new
+        Date().getTime()+Math.random() + '&invert_field_sensitivity=' + invertFieldSensitivity + '&sandbox=' + sandbox;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(tf, s); }
+      )();
+
+    </script>
+    <noscript>
+      <img src="http://api.trustedform.com/ns.gif" />
+    </noscript>
+
+  </body>
+</html>
