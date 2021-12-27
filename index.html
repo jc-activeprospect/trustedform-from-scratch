@@ -11,7 +11,7 @@
     <form action="submission_page.html">
       <label for="fname">First name:</label><br>
       <!-- add the following inside of the input type params: onClick="myFunction()" -->
-      <input type="text" id="fname" name="fname"><br>
+      <input type="text" id="fname" name="fname" onClick="myFunction()"><br>
       <label for="lname">Last name:</label><br>
       <input type="text" id="lname" name="lname"><br><br>
       <input type="checkbox" name="disclaimer" /> By clicking this button, I hereby consent to receive sms, calls, emails
@@ -21,6 +21,13 @@
     </form>
 
     <p>If you click the "Submit" button, the form-data will be sent to a page called "/submission_page.html".</p>
+
+    <div id="TF_URL"></div>
+    <script type="text/javascript">
+      function myFunction() {
+        document.getElementById("TF_URL").innerHTML = "<b>TF URL:</b> " + document.getElementById("xxTrustedFormToken_0").value;
+      }
+    </script>
 
     <!-- <script type="text/javascript">
       function myFunction() {
@@ -33,13 +40,13 @@
         var field = 'xxTrustedFormCertUrl';
         var provideReferrer = false;
         var invertFieldSensitivity = false;
-        var sandbox = true;
+        // var sandbox = true;
         var tf = document.createElement('script');
         tf.type = 'text/javascript'; tf.async = true;
         tf.src = 'http' + ('https:' == document.location.protocol ? 's' : '') +
         '://api.trustedform.com/trustedform.js?provide_referrer=' +
         escape(provideReferrer) + '&field=' + escape(field) + '&l='+new
-        Date().getTime()+Math.random() + '&invert_field_sensitivity=' + invertFieldSensitivity + '&sandbox=' + sandbox;
+        Date().getTime()+Math.random() + '&invert_field_sensitivity=' + invertFieldSensitivity;
         var s = document.getElementsByTagName('script')[0];
         s.parentNode.insertBefore(tf, s); }
       )();
